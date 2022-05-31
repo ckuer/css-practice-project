@@ -1,61 +1,121 @@
-/*
-COLORS
-#F7FFF7 - almost white
-#343434 - dark gray - almost black
-#2F3061 - blue dark
-#FFE66D - yellow
-#A1C6D7 - blue light
+/* 
+COLORS 
+#080604 - almost black
+#5C79AB - blue (contrasts with almost black)
+#546E9B - slightly darker blue
+#CABBC4 - light gray
 */
-
 
 /* Global styles
 ----------------------------------------*/
+/* border box fix */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body {
-    color: #343434;
+    color: #080604;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
 }
 img {
     width: 300px;
+    border-top: 30px double #080604;
+    border-bottom: 30px double #080604;
 }
 a {
-    color: #FFE66D;
+    color: #CABBC4;
 }
 a:hover {
+    background: #CABBC4;
+    color: #080604;
     text-decoration: none;
+}
+h1 {
+    font-size: 70px;
+}
+h2 { 
+    margin: 0;
+    font-size: 35px;
+}
+h1, h2 {
+    font-family: 'Alfa Slab One', cursive;
+    margin: 0;
+    font-weight: normal;
+}
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 /* Profile
 ----------------------------------------*/
 header {
-    color: #F7FFF7;
-    background: #2F3061;
+    color: #5C79AB;
+    background: #080604;
 }
 
 /* Projects
 ----------------------------------------*/
 .projects {
-    background: #F7FFF7;
+    background: #5C79AB;
 }
 .projects a {
-    color: #2F3061;
+    color: #080604;
 }
 .projects .btn {
-    color: #F7FFF7;
-    background: #2F3061;
+    color: #5C79AB;
+    background: #080604;
     text-decoration: none;
-    padding: 8px;
+    padding: 8px 12px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover {
-    background: rgba(47, 48, 97, 80%);
+    background: rgba(8, 6, 4, 80%);
+}
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #080604;
+    padding: 25px 0;
+}
+.project-item img {
+    float: left;
+}
+.project-item h3 {
+    margin-top: 0;
+}
+.img-container {
+    width: 300px;
+}
+.text-container {
+    width: 480px;
+    margin-left: 20px;
+}
+.img-container, .text-container {
+    float: left;
 }
 
 /* Education
 ----------------------------------------*/
+.education {
+    background: #546E9B;
+}
 
 
 /* Contact Info
 ----------------------------------------*/
 footer {
-    color: #F7FFF7;
-    background: #343434;
+    color: #5C79AB;
+    background: #080604;
+}
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
 }
