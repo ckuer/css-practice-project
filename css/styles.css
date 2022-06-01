@@ -1,9 +1,10 @@
 /* 
 COLORS 
-#080604 - almost black
-#5C79AB - blue (contrasts with almost black)
-#546E9B - slightly darker blue
-#CABBC4 - light gray
+#011627 - almost black
+#e6e6e6 - almost white
+#2EC4B6 - aqua blue
+#244c62 - dark grayish blue
+#d1d2d3 - light gray
 */
 
 /* Global styles
@@ -16,35 +17,38 @@ html {
     box-sizing: inherit;
 }
 body {
-    color: #080604;
+    color: #011627;
     margin: 0;
     padding: 0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'Gill Sans', sans-serif;
     font-size: 18px;
     line-height: 1.5;
 }
 img {
     width: 300px;
-    border-top: 30px double #080604;
-    border-bottom: 30px double #080604;
+    border-radius: 4px;
 }
 a {
-    color: #CABBC4;
+    color: #e6e6e6;
 }
 a:hover {
-    background: #CABBC4;
-    color: #080604;
+    background: #e6e6e6;
+    color: #011627;
     text-decoration: none;
 }
 h1 {
     font-size: 70px;
+    background: -webkit-linear-gradient(#2EC4B6, #244c62);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 h2 { 
     margin: 0;
     font-size: 35px;
 }
 h1, h2 {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One', 'Rockwell Extra Bold', 'Lucida Bright', serif;
     margin: 0;
     font-weight: normal;
 }
@@ -57,36 +61,34 @@ h1, h2 {
 /* Profile
 ----------------------------------------*/
 header {
-    color: #5C79AB;
-    background: #080604;
+    color: #011627;
+    background: #d1d2d3;
 }
 
 /* Projects
 ----------------------------------------*/
 .projects {
-    background: #5C79AB;
-}
-.projects a {
-    color: #080604;
+    background: #e6e6e6;
 }
 .projects .btn {
-    color: #5C79AB;
-    background: #080604;
+    color: #e6e6e6;
+    background: #011627;
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 4px;
     display: inline-block;
 }
 .projects .btn:hover {
-    background: rgba(8, 6, 4, 80%);
+    background: #2EC4B6;
+    color: #011627;
 }
 .project-item {
     overflow: hidden;
-    border-bottom: 1px dashed #080604;
+    border-bottom: 5px dotted #d1d2d3;
     padding: 25px 0;
 }
 .project-item img {
-    float: left;
+    float: right;
 }
 .project-item h3 {
     margin-top: 0;
@@ -96,24 +98,24 @@ header {
 }
 .text-container {
     width: 480px;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 .img-container, .text-container {
-    float: left;
+    float: right;
 }
 
 /* Education
 ----------------------------------------*/
 .education {
-    background: #546E9B;
+    background: #d1d2d3;
 }
 
 
 /* Contact Info
 ----------------------------------------*/
 footer {
-    color: #5C79AB;
-    background: #080604;
+    color: #d1d2d3;
+    background: #011627;
 }
 footer ul {
     list-style-type: none;
